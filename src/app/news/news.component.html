@@ -1,0 +1,15 @@
+<!-- news.component.html -->
+<div class="news-container">
+    <h1>Latest News and Events</h1>
+    <div class="news-list">
+      <div *ngFor="let event of events" class="news-item">
+        <img [src]="event.imageUrl" alt="Event Image" class="news-image" />
+        <div class="news-content">
+          <h2>{{ event.title }}</h2>
+          <p>{{ event.description }}</p>
+          <p><strong>Date: </strong>{{ event.date }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  

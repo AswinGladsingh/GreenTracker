@@ -1,0 +1,24 @@
+<div class="leadership-board-container">
+    <h2>Leadership Board</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Position</th>
+          <th>Reward Points</th>
+          <th>Tier</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let leader of leaders">
+          <td>{{ leader.id }}</td>
+          <td>{{ leader.name }}</td>
+          <td>{{ leader.position }}</td>
+          <td>{{ leader.rewardPoints }}</td>
+          <td>{{ leader.tier }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

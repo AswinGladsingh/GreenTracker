@@ -1,0 +1,26 @@
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  

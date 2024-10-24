@@ -1,0 +1,49 @@
+.register-container {
+    max-width: 400px; /* Set a maximum width for the registration container */
+    margin: auto; /* Center the container */
+    padding: 20px; /* Add padding inside the container */
+    border: 1px solid #ccc; /* Add a border around the container */
+    border-radius: 8px; /* Round the corners */
+    background-color: #f9f9f9; /* Light background color */
+  }
+  
+  h2 {
+    text-align: center; /* Center the heading */
+    color: #333; /* Dark text color */
+  }
+  
+  label {
+    display: block; /* Make labels block elements */
+    margin: 10px 0 5px; /* Add margin above and below labels */
+  }
+  
+  input[type="email"],
+  input[type="password"],
+  input[type="text"] {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside inputs */
+    margin-bottom: 10px; /* Space below inputs */
+    border: 1px solid #ccc; /* Border around inputs */
+    border-radius: 4px; /* Round the corners of inputs */
+  }
+  
+  .error-message {
+    color: red; /* Red color for error messages */
+    font-size: 0.9em; /* Smaller font size for error messages */
+  }
+  
+  button {
+    width: 100%; /* Full width for buttons */
+    padding: 10px; /* Padding inside buttons */
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Round the corners */
+    cursor: pointer; /* Change cursor on hover */
+    margin-top: 10px; /* Space above the button */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+  }
+  

@@ -1,0 +1,59 @@
+   <!-- <div class="login-container">
+    <h2>Login</h2>
+    <form name="loginForm" (ngSubmit)="onSubmit()">
+      <div>
+        <label for="email">Email</label>
+        <input id="email" type="email" formControlName="email" required />
+        <div *ngIf="loginForm.controls['email'].errors && (loginForm.controls['email'].touched || loginForm.controls['email'].dirty)">
+          <div *ngIf="loginForm.controls['email'].errors['required']">Email is required.</div>
+          <div *ngIf="loginForm.controls['email'].errors['email']">Invalid email format.</div>
+        </div>
+      </div>
+  
+      <div>
+        <label for="password">Password</label>
+        <input id="password" type="password" formControlName="password" required />
+        <div *ngIf="loginForm.controls['password'].errors && (loginForm.controls['password'].touched || loginForm.controls['password'].dirty)">
+          <div *ngIf="loginForm.controls['password'].errors['required']">Password is required.</div>
+          <div *ngIf="loginForm.controls['password'].errors['minlength']">Minimum length is 6 characters.</div>
+        </div>
+      </div>
+  
+      <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+  
+      <button type="submit" [disabled]="loading">Login</button>
+      <div *ngIf="loading">Loading...</div>
+    </form>
+  </div>
+   -->
+
+   <div class="login-container">
+    <h2>Login</h2>
+    <form name ="loginForm" (ngSubmit)="onSubmit()">
+      <div>
+        <label for="email">Email</label>
+        <input id="email" type="email" formControlName="email" required />
+        <div *ngIf="loginForm.controls['email'].errors && (loginForm.controls['email'].touched || loginForm.controls['email'].dirty)">
+          <div *ngIf="loginForm.controls['email'].errors['required']">Email is required.</div>
+          <div *ngIf="loginForm.controls['email'].errors['email']">Invalid email format.</div>
+        </div>
+      </div>
+  
+      <div>
+        <label for="password">Password</label>
+        <input id="password" type="password" formControlName="password" required />
+        <div *ngIf="loginForm.controls['password'].errors && (loginForm.controls['password'].touched || loginForm.controls['password'].dirty)">
+          <div *ngIf="loginForm.controls['password'].errors['required']">Password is required.</div>
+          <div *ngIf="loginForm.controls['password'].errors['minlength']">Minimum length is 6 characters.</div>
+        </div>
+      </div>
+  
+      <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+  
+      <button type="submit" [disabled]="loading">Login</button>
+      <div *ngIf="loading">Loading...</div>
+    </form>
+  
+    <p>New User? <button (click)="goToRegister()">Register</button></p>
+  </div>
+  
